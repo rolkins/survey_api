@@ -1,5 +1,7 @@
 from django.contrib import admin
-from .models import Survey, PossibleAnswer, Question, ClosedSurvey
+from .models import Survey, PossibleAnswer, Question
+
+admin.site.register(PossibleAnswer)
 
 
 class QuestionInstanceInline(admin.TabularInline):

@@ -45,10 +45,6 @@ class AnswerViewSet(APIView):
 
             percent = len(right_answer) / len(survey.question_survey.all()) * 100
 
-            print(len(right_answer))
-            print(len(wrong_answer))
-            print(percent)
-
             right_answer = str(len(right_answer))
             wrong_answer = str(len(wrong_answer))
 
